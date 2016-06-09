@@ -29,7 +29,7 @@ class ValidatorMakeController
 
         if ($validator->fails()) {
             throw new BadRequestHttpException($validator->messages());
-        };
+        }
 
         // Do stuff
     }

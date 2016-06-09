@@ -15,6 +15,14 @@ class AppServiceProvider extends ServiceProvider {
 		$this->app->make('validator')->resolver(function ($translator, $data, $rules, $messages, $customAttributes) {
 			return new MyValidator($translator, $data, $rules, $messages, $customAttributes);
 		});
+
+		/*
+
+        Validator::extend('foo', function($attribute, $value, $parameters, $validator) {
+            return $value == 'foo';
+        });
+
+		 */
 	}
 
 	/**

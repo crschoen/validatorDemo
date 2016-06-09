@@ -6,7 +6,9 @@ class ProductCreateRequest extends Request
 {
     public function rules()
     {
-        return ['products' => 'products'];
+        return [
+			'products' => 'products',
+		];
     }
 
     public function messages()
