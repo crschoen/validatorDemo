@@ -7,7 +7,7 @@ class ProductCreateRequest extends Request
     public function rules()
     {
         return [
-			'products' => 'products',
+			'products' => 'array|products',
 		];
     }
 
